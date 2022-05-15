@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import "./nav.css";
 
 export default function Nav(props) {
   return (
-    <div className="nav">
-      <Link to="/">
+    <nav className="nav">
+      <Link to="/" id="logo">
         <div>iStocks</div>
       </Link>
       <Link to="/stocks">
@@ -12,6 +13,6 @@ export default function Nav(props) {
       <Link to="/about">
         <div>ABOUT</div>
       </Link>
-    </div>
+    </nav>
   );
 }

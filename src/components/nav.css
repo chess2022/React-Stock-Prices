@@ -1,0 +1,24 @@
+.nav {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  font-size: 1.25em;
+}
+
+.nav a {
+  text-decoration: none;
+  margin: 10px;
+}
+
+.nav a:visited {
+    color: white;
+}
+
+.nav a:hover {
+  color: rgb(27, 216, 27);
+}
+
+#logo {
+  margin-right: auto;
+}

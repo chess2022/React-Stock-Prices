@@ -26,7 +26,7 @@ export default function Price() {
   const loaded = () => (
     <div>
       <h1>
-        {stock.companyName} {stock.symbol}
+        {stock.companyName} ({stock.symbol})
       </h1>
       <h2>{stock.close}</h2>
       <a href="https://iexcloud.io">IEX Cloud</a>
