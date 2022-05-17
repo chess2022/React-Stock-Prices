@@ -1,0 +1,41 @@
+#stocks a {
+  text-decoration: none;
+}
+
+#stocks a:visited {
+    color: rgb(61, 58, 58);
+}
+
+#stocks a:hover {
+  color: rgb(6, 54, 6);
+}
+
+#stocks {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#stocks td, .stocks th {
+  /* border: 1px solid #ddd; */
+  padding: 8px;
+}
+#stocks tr:nth-child(even) {
+  background-color: #f3f1f1;}
+
+#stocks tr:hover {
+  background-color: #ddd;}
+
+#stocks th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.stocks td.col1 {width: 25%}
+.stocks td.col2 {width: 15%}
+.stocks td.col3 {width: 15%}
+.stocks td.col4 {width: 15%}
+.stocks td.col5 {width: 15%}
+.stocks td.col6 {width: 15%}

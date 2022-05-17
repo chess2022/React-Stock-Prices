@@ -31,10 +31,15 @@ h2 {
 
 .stocks--rows {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(6, 1fr);
   padding: 5px;
 
 }
+
+.line {
+  grid-column: 1 / -1;
+  height: 1px;
+  background: black;}
 
 #stocks--header {
 

@@ -34,7 +34,7 @@ export default function Stocks() {
         symbol: "FB",
         lastPrice: 140.34,
         change: 0.810,
-        high: 141.0244,
+        high: 141.02,
         low: 139.76,
         open: 140.08,
       },
@@ -59,19 +59,19 @@ export default function Stocks() {
     ];
     return (
       <div className="stocks">
-        <h3 className="stocks--rows">
+        <div className="stocks--rows">
           <div>COMPANY</div>
           <div> LAST PRICE </div>
           <div>% CHANGE</div>
           <div> HIGH</div>
           <div>LOW</div>
           <div> OPEN</div>
-        </h3>
-        <hr />
+        </div>
+        {/* <tr className="line"></tr> */}
         {stocks.map(
           ({ name, symbol, lastPrice, change, high, low, open }, idx) => (
             <Link key={idx} to={`/stocks/${symbol}`}>
-              <h2 className="stocks--rows" id="stocks--header">
+              <div className="stocks--rows" id="stocks--header">
                 <div>
                   {name} ({symbol})
                 </div>
@@ -80,7 +80,8 @@ export default function Stocks() {
                 <div> ${high} </div>
                 <div>${low}</div>
                 <div> ${open}</div>
-              </h2>
+              </div>
+              <div className="line"></div>
             </Link>
           )
         )}

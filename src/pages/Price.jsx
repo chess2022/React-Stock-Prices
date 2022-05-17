@@ -28,7 +28,7 @@ export default function Price() {
       <h1>
         {stock.companyName} ({stock.symbol})
       </h1>
-      <h2>{stock.close}</h2>
+      <h2>${stock.latestPrice}</h2>
       <a href="https://iexcloud.io">IEX Cloud</a>
     </div>
   );
