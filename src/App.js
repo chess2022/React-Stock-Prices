@@ -10,6 +10,7 @@ export default function App() {
   return (
     <div className="App">
       <Nav />
+      <br />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/stocks" element={<Stocks />} />

@@ -49,7 +49,7 @@ export default function Stocks() {
       },
       {
         name: "Intel Corporation",
-        symbol: "INTL",
+        symbol: "INTC",
         lastPrice: 36.16,
         change: -0.370,
         high: 36.78,
@@ -59,7 +59,7 @@ export default function Stocks() {
     ];
     return (
       <div className="stocks">
-        <div className="stocks--rows">
+        <div className="stocks--rows" id="stocks--header">
           <div>COMPANY</div>
           <div> LAST PRICE </div>
           <div>% CHANGE</div>
@@ -71,7 +71,7 @@ export default function Stocks() {
         {stocks.map(
           ({ name, symbol, lastPrice, change, high, low, open }, idx) => (
             <Link key={idx} to={`/stocks/${symbol}`}>
-              <div className="stocks--rows" id="stocks--header">
+              <div className="stocks--rows">
                 <div>
                   {name} ({symbol})
                 </div>
